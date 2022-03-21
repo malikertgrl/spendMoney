@@ -1,0 +1,26 @@
+ [{
+    "id":1,
+    "title":"Sakız",
+    "price": 0.5
+},
+{
+    "id":2,
+    "title":"Cola",
+    "price": 6
+},
+{
+    "id":3,
+    "title":"Car",
+    "price": 40000
+},
+{
+    "id":4,
+    "title":"Choclate",
+    "price": 8
+},
+{
+    "id":5,
+    "title":"Glass",
+    "price": 15
+}
+]

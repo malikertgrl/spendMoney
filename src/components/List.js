@@ -11,7 +11,7 @@ export default function List() {
     const [basket, setBasket] = useState([])
     const [total, setTotal] = useState(0)
 
-    const cash = 100
+    const cash = 20000000
 
     const addBasket = (item) => {
         // ürün sepette var mı diye kontrol ediyor

@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Header.css"
+import { FormatMoney } from './helpers'
 
 export default function Header({ total, cash }) {
 
@@ -7,11 +8,9 @@ export default function Header({ total, cash }) {
         <div className='Header'>
             <>
                 {total ?
-                    <>Harcayacak <span>${cash - total}</span>  kaldı !</>
-                    : <> Harcamak için <span>${cash}</span>   var ! </>
+                    <>Harcayacak <span> $ {cash - total}</span>  kaldı !</>
+                    : <> Harcamak için <span> {cash}</span>   var ! </>
                 }</>
-
-
 
         </div>
     )

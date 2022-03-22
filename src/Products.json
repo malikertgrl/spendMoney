@@ -26,7 +26,7 @@
 {
     "id":5,
     "title":"Ship",
-    "price": 15,
+    "price": 1500000,
     "image":"http://cdn.cnn.com/cnnnext/dam/assets/220212144422-01-wonder-of-the-seas-royal-caribbean.jpg"
 },
 {
@@ -57,7 +57,7 @@
 {
     "id":5,
     "title":"Ship",
-    "price": 15,
+    "price": 1500000,
     "image":"http://cdn.cnn.com/cnnnext/dam/assets/220212144422-01-wonder-of-the-seas-royal-caribbean.jpg"
 },
 {

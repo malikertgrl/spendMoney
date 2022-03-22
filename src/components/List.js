@@ -56,24 +56,27 @@ export default function List() {
 
 
     return (
-        <div>
+        <div className='InnerBody'>
             <div>
                 <Header cash={cash} total={total} />
 
             </div>
 
-            <div className='List'>
-                {Products.map(item =>
-                    <Product
-                        key={item.id}
-                        basket={basket}
-                        item={item}
-                        addBasket={addBasket}
-                        removeBasket={removeBasket}
-                        cash={cash}
-                        total={total} />
+            <div >
+                <div className='List'>
+                    {Products.map(item =>
+                        <Product
+                            key={item.id}
+                            basket={basket}
+                            item={item}
+                            addBasket={addBasket}
+                            removeBasket={removeBasket}
+                            cash={cash}
+                            total={total} />
 
-                )}
+                    )}
+                </div>
+
                 {basket.length > 0 ?
                     <div>
                         <Basket

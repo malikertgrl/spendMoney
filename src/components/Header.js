@@ -1,22 +1,17 @@
 import React from 'react'
+import "./Header.css"
 
 export default function Header({ total, cash }) {
-    const mystyle = {
-        // color: "pink",
-        backgroundColor: "white",
-        padding: "10px",
-        margin: 10,
-        fontFamily: "Arial",
-        alignContents: "center",
-        flex: 1
-    };
+
     return (
-        <div>
-            <h1 style={mystyle} >
+        <div className='Header'>
+            <>
                 {total ?
-                    <>Harcayacak  ${cash - total} kaldı !</>
-                    : <> Harcamak için ${cash}  var ! </>
-                }</h1>
+                    <>Harcayacak <span>${cash - total}</span>  kaldı !</>
+                    : <> Harcamak için <span>${cash}</span>   var ! </>
+                }</>
+
+
 
         </div>
     )

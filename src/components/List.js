@@ -56,42 +56,46 @@ export default function List() {
 
 
     return (
-        <div className='InnerBody'>
-            <div>
+        <div>
+            <div className='Header'>
                 <Header cash={cash} total={total} />
 
             </div>
 
-            <div >
-                <div className='List'>
-                    {Products.map(item =>
-                        <Product
-                            key={item.id}
-                            basket={basket}
-                            item={item}
-                            addBasket={addBasket}
-                            removeBasket={removeBasket}
-                            cash={cash}
-                            total={total} />
+            <div className='InnerBody'>
 
-                    )}
-                </div>
 
-                {basket.length > 0 ?
-                    <div>
-                        <Basket
-                            basket={basket}
-                            Products={Products}
-                            total={total}
-                            onClick={() => setBasket([])}
-                        />
+                <div >
+                    <div className='List'>
+                        {Products.map(item =>
+                            <Product
+                                key={item.id}
+                                basket={basket}
+                                item={item}
+                                addBasket={addBasket}
+                                removeBasket={removeBasket}
+                                cash={cash}
+                                total={total} />
 
+                        )}
                     </div>
-                    :
-                    <></>
-                }
-            </div >
+
+                    {basket.length > 0 &&
+                        <div>
+                            <Basket
+                                basket={basket}
+                                Products={Products}
+                                total={total}
+                                onClick={() => setBasket([])}
+                            />
+
+                        </div>
+
+                    }
+                </div >
+            </div>
         </div>
+
 
     )
 }

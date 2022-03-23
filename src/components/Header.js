@@ -1,6 +1,4 @@
 import React from 'react'
-import "./Header.css"
-import { FormatMoney } from './helpers'
 
 export default function Header({ total, cash }) {
 
